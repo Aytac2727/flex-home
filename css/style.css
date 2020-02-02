@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+#container {
+    margin: 5em 0;
+}
+
+#container .part .part-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    transition: .3s;
+}
+#container .girl:hover img {
+    transform: scale(1.2);
+}
+#container .rec-img:hover img {
+    transform: scale(1.2);
+}
+
+#container .part .part-text p {
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+#container .part:hover .part-text p {
+    visibility: visible;
+    opacity: 0.8;
+}
+
+#container .part-1 .part-text p{
+    visibility: hidden;
+    opacity: 0;
+}
+#container .part-1:hover .part-text p {
+    visibility: visible;
+    opacity: 0.8;
+}
+
+
+#container .part:hover .part-text {
+    transform: translateY(-15px)
+}
+#container .part-item,
+#container .part {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    padding:0 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+#container .part-item {
+    height: 220px;
+}
+#container .part-item img {
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+#container .part .rec-img {
+    overflow: hidden;
+}
+
+#container  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: .3s;
+    
+}
+#container .part-1 {
+    border-radius: 5px;
+    border: 1px solid transparent;
+    height: 200px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+}
+
+#container .part .part-1 img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* container end */
+
+#view {
+    background-image: url(../photo/view.jpg);
+    background-size: cover;
+    height: 550px;
+    margin: 10px 24px;
+    color: white;
+}
+
+#view .words {
+    padding: 10em 0;
+    margin: 0 4em;
+}
+
+#view .words h4 {
+    font-size: 24px;
+}
+
+#view .words h1 {
+    padding: 10px 0;
+    font-size:40px;
+}
+
+#view .paraq {
+    font-size: 20px;
+    padding: 15px 0;
+    width: 50%;
+}
+
+#view .words .link a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;  
+}
+
+#view .link a {
+    position: relative;
+}
+#view .link a::after {
+    content: '';
+    bottom:0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    transition: .3s;
+}
+
+#view .link a:hover::after {
+    width:0%;
+}
+
+/* view end */
+#modern {
+    margin: 5em 0;
+}
+#modern .glass
+ {
+    height: 600px;
+    width: 50%;
+    margin: 10px;
+    color: white;
+    position: relative;
+}
+
+#modern .glasses {
+    background: url(../photo/glasses.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 0 15px;
+    margin: 10px;
+}
+
+#modern .glasses .glass-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    transition: .3s;
+}
+
+#modern .glasses:hover .glass-text {
+   transform: translateY(-15px); 
+}
+#modern .glasses p{
+    visibility: hidden;
+    opacity: 0;
+}
+#modern .glasses:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+#modern .item-1 {
+    background: url(../photo/china.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    padding: 0 15px;
+    margin: 10px;
+}
+
+#modern .glass .item-1 .glass-text {
+    position: absolute;
+    top: 220px;
+    left: 30px;
+    transition: .3s;
+}
+
+#modern .item-1:hover .glass-text {
+    transform: translateY(-15px);
+}
+
+#modern .item-1 p {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#modern .item-1:hover p {
+    visibility: visible;
+    opacity: 1;
+}
+   
+#modern .item-2 {
+    background: url(../photo/basket.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin: 10px;
+    padding: 0 15px;
+}
+
+#modern .item-2 p {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#modern .item-2:hover p {
+    visibility: visible;
+    opacity: 1;
+}
+
+#modern .glass .item-2 .glass-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    transition: .3s;
+}
+
+#modern .item-2:hover .glass-text{
+    transform: translateY(-15px);
+}
+
+#faiz {
+    background: url(../photo/palma.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 4em;
+    height: 450px;
+    text-align: center;
+    color: white;
+}
+
+#faiz h4 {
+    font-size: 25px;
+   padding-top: 3em;
+}
+
+#faiz h1 {
+    font-size: 100px;
+}
+
+#faiz .far {
+    font-size: 20px;
+    padding: 20px 20em;
+}
+
+#faiz h5 a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+#faiz h5 a::after {
+    content: '';
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    transition: .3s;
+}
+
+#faiz h5 a:hover::after{
+    width: 0%;
+}
+
+#cover {
+    text-align: center;
+    height: 350px;
+    margin: 3em;
+}
+#cover .d-flex {
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#cover h1 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+#cover p {
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+
+#cover .icon {
+    border: 1px solid rgb(247, 238, 238);
+    border-radius: 5px;
+    padding: 30px 6em;
+    font-size: 18px;
+    transition: 0.3s;
+}
+#cover .icon i {
+    margin-top: 15px;
+    color: #ff1053;
+}
+
+#cover .icon h4{
+    margin: 15px 0;
+}
+
+#cover .icon:hover {
+    background-color:#ff1053 ;
+    color: white;
+}
+#cover .icon:hover i {
+    color: white;
+}
+
+#forrest {
+    background-image: url(../photo/forrest.jpg);
+    background-size: cover;
+    height: 600px;
+    margin: 2em;
+    text-align: center;
+}
+
+#forrest .style {
+    padding: 7em 14em;
+    font-size: 30px;
+    color: white;
+}
+
+#forrest .style span {
+    position: relative;
+}
+
+#forrest .style span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    right: 0;
+    background-color: #ff1053;
+    transition: .3s;
+}
+
+#forrest .style span:hover::after {
+    height: 7px;
+}
+
+#solient {
+    height: 300px;
+    background-color: black;
+    font-size: 15px;
+    text-align: center;
+    padding: 5em 0;
+    color: white;
+}
+
+
+#solient .di {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#solient .icons {
+    padding: 15px;
+    border-radius:50%;
+    border:1px solid #252525;
+    color: white;
+    margin-right:10px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#solient .icons:hover {
+    border:1px solid white ;
+}
